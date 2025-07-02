@@ -1,0 +1,54 @@
+@font-face{
+	font-family: roboto-black;
+	src: url('../../fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: roboto-bold;
+	src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: roboto-medium;
+	src: url('../../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: roboto-light;
+	src: url('../../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: roboto-thin;
+	src: url('../../fonts/Roboto-Thin.ttf') format('truetype');
+}
+
+* { 
+	margin: 0;
+ 	padding: 0;
+ 	font-family: roboto-bold, sans-serif;
+}
+
+:root {
+	--color-primary: #c51216;
+	--color-secundary: #1d1d1b;
+    --color-tercery: #f0f4f4;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-wsp: #2EB743;
+	--font-family-black: 'roboto-black';
+	--font-family-bold: 'roboto-bold';
+	--font-family-medium: 'roboto-medium';
+	--font-family-light: 'roboto-light';
+	--font-family-thin: 'roboto-thin';
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-tercery);
+	border-radius: 0;
+}
