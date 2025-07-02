@@ -771,6 +771,7 @@ html {
     .servicios__item-text { font-size: 2.5vw; margin: 1.5vw 3vw; }
     /* Nosotros */
     .nosotros__imgs { width: 90vw; margin-inline: auto; }
+    .nosotros__img { width: 90vw; }
     .nosotros__lines { display: none; }
     .nosotros__titles { padding: 0; margin-block: 5vw 8vw; }
     .nosotros__title { font-size: 6vw; max-width: 90vw; margin-inline: auto; margin-block: 0 5vw; }
