@@ -126,7 +126,7 @@ html {
 .main__lines {
     display: flex;
     width: 70vw;
-    margin-block: 2.5vw;
+    margin-block: 1.5vw;
     height: 5px;
     border-top: 1px solid var(--color-white);
     border-bottom: 1px solid var(--color-white);
@@ -216,7 +216,8 @@ html {
 
 .servicios__subtitle {
     font-family: var(--font-family-light);
-    font-size: 2vw;
+    font-size: 1.5vw;
+    line-height: 1.6;
     text-align: center;
     max-width: 80vw;
     margin-inline: auto;
@@ -337,15 +338,16 @@ html {
 }
 
 .servicios__item-title {
-    font-family: var(--font-family-light);
-    font-size: 1.7vw;
+    font-family: var(--font-family-bold);
+    font-size: 1.5vw;
     text-align: center;
     margin: 1vw;
 }
 
 .servicios__item-text {
     font-family: var(--font-family-light);
-    font-size: 1vw;
+    font-size: 1.1vw;
+    line-height: 1.3;
     text-align: center;
     margin: 1vw;
 }
@@ -369,7 +371,7 @@ html {
 
 .nosotros__slider {
     display: flex;
-    width: 400%;
+    width: 500%;
     height: max-content;
 }
 
@@ -430,6 +432,7 @@ html {
 .nosotros__subtitle {
     font-family: var(--font-family-light);
     font-size: 1.5vw;
+    line-height: 1.6;
     text-align: center;
     max-width: 80vw;
     margin-inline: auto;
@@ -442,6 +445,37 @@ html {
     max-width: 80vw;
     margin-inline: auto;
     margin-block: 2vw 3vw;
+}
+
+.nosotros__wsp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: .3vw 1.2vw;
+    width: max-content;
+    height: max-content;
+    background: var(--color-wsp);
+    border: 1px solid var(--color-secundary);
+    height: auto;
+    margin-inline: auto;
+    margin-block: 3vw 1vw;
+    transition: .3s all ease;
+}
+
+.nosotros__wsp:hover {
+    transform: scale(1.05);
+}
+
+.nosotros__wsp-icon {
+    fill: #fff;
+    width: 1.8vw;
+}
+
+.nosotros__wsp-label {
+    color: #fff;
+    font-size: 1.2vw;
+    margin-inline: 1vw 0;
 }
 
 /* Contacto */
@@ -747,7 +781,7 @@ html {
     .main { height: 120vw; background-image: url(../../images/clients/fondo_1-respo.webp); }
     .main__container { height: 100vw; top: 20vw; }
     .main__title { font-size: 8vw; text-align: center; }
-    .main__lines { height: 2px; width: 95vw; margin-block: 5vw; }
+    .main__lines { height: 2px; width: 95vw; margin-block: 2vw; }
     .main__lines:after { height: 15px; }
     .main__lines:before { height: 15px; }
     .main__subtitle { font-size: 5vw; text-align: center; max-width: 90vw; }
@@ -776,6 +810,9 @@ html {
     .nosotros__titles { padding: 0; margin-block: 5vw 8vw; }
     .nosotros__title { font-size: 6vw; max-width: 90vw; margin-inline: auto; margin-block: 0 5vw; }
     .nosotros__subtitle { font-size: 3vw; max-width: 90vw; }
+    .nosotros__wsp { padding: 1.2vw 5vw; margin-block: 7vw 0; }
+    .nosotros__wsp-icon { width: 4vw; }
+    .nosotros__wsp-label { font-size: 3vw; margin-inline: 4vw }
     /* Contacto */
     .contacto { padding-block: 8vw; margin-block: 0 6vw; }
     .contacto__title { font-size: 6vw; max-width: 90vw; margin-inline: auto; margin-block: 1vw 3vw; }
