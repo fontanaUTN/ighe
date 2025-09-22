@@ -111,3 +111,24 @@ const sendMessageForm = () => {
 }
 
 contactMapa.innerHTML = '<iframe class="contacto__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.4140174316994!2d-59.6745804!3d-29.175577299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eb009ffb10c05%3A0x3f8c373619b3f398!2sHormax%20Hormigones!5e1!3m2!1ses-419!2sar!4v1751407374866!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+
+// HOME
+const arrServicesLinks = document.querySelectorAll('.servicios__item');
+
+arrServicesLinks.forEach((container) => {
+	container.addEventListener('click', function(event) {
+		if(event.target.classList.contains('servicios__item-wsp') ||
+		event.target.classList.contains('servicios__item-icon')){
+			event.preventDefault();
+            let textService = event.target.dataset.id == 1 ? 'el%20servicio%20de%20laboratorio%20' :
+            event.target.dataset.id == 2 ? 'el%20servicio%20de%20ingenieria%20y%20consultoria%20' :
+            'el%20servicio%20de%20innovacion%20y%20desarrollo%20';
+
+            if(window.innerWidth <= 600 || screen.width <= 600) {
+				window.open('https://wa.me/3482672468?text=Hola,%20queria%20consultar%20sobre%20' + textService, '_blank');
+			} else {
+				window.open('https://wa.me/3482672468?text=Hola,%20queria%20consultar%20sobre%20' + textService, '_blank');
+			}
+		}
+	});
+});
