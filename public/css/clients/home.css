@@ -533,8 +533,9 @@ html {
 .contacto__maps {
     display: block;
     width: 30vw;
-    height: 20vw;
-    margin-block: 1.5vw 1vw;
+    height: auto;
+    margin-block: .5vw 1vw;
+    padding-block: 1vw;
     background: var(--color-white);
 }
 
@@ -542,6 +543,22 @@ html {
     width: 100%;
     height: 100%;
     border: 1px solid var(--color-secundary);
+}
+
+.contacto__maps-item {
+    display: flex;
+    align-items: center;
+    margin: 1vw;
+}
+
+.contacto__maps-icon {
+    width: 1.8vw;
+    margin-inline: 1vw;
+}
+
+.contacto__maps-text {
+    font-family: var(--font-family-light);
+    font-size: 1.1vw;
 }
 
 .contacto__data {
@@ -1020,7 +1037,10 @@ html {
     .contacto__title { font-size: 6vw; max-width: 90vw; margin-inline: auto; margin-block: 1vw 3vw; }
     .contacto__container { flex-direction: column-reverse; margin-inline: auto; }
     .contacto__datas { margin-inline: 0; margin-block: 4vw 0; }
-    .contacto__maps { width: 75vw; height: 50vw; }
+    .contacto__maps { width: 100vw; padding-block: 3vw; display: flex; flex-direction: column; align-items: center; }
+    .contacto__maps-item { margin-block: 2vw; }
+    .contacto__maps-icon { width: 4.5vw; margin-inline: 2vw; }
+    .contacto__maps-text { font-size: 3.7vw; }
     .contacto__form { margin-inline: 0; }
     .contacto__form-item { margin-block: 1vw; }
     .contacto__form-label { font-size: 3vw; }
@@ -1028,6 +1048,7 @@ html {
     .contacto__form-textarea { font-size: 3vw; width: 70vw; height: 20vw; padding: .8vw 3vw; }
     .contacto__form-adv { font-size: 2.8vw; margin-block: 2vw 0; padding: .4vw 3vw; width: calc(100% - 6vw); }
     .contacto__form-btn { width: 75vw; padding: 1vw 0; font-size: 3vw; margin-block: 3vw 0; }
+    .contacto__form-label-maps { text-align: center; font-size: 6vw; font-family: var(--font-family-bold); margin-block: 5vw 0; }
     /* Footer */
     .footer { padding-block: 6vw 2vw; }
     .footer__redes { padding: 1.5vw 4vw; border-radius: 2vw; margin-block: 0 3vw; }
