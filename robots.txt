@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ighe.com.ar/resources/sitemap/urlist.txt
+Sitemap: https://ighe.com.ar/resources/sitemap/sitemap.xml
